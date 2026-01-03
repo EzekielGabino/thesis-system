@@ -263,7 +263,7 @@
 
                                     $resultadviser = $stmtadviser->get_result();
                                     if($result && $resultadviser -> num_rows > 0){
-                                        $data = $result->fetch_assoc();
+                                        $data = $resultadviser->fetch_assoc();
                                         $adviser = $data['name'];
                                     }
                                 }

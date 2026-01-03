@@ -238,7 +238,7 @@
                         <?php
                     }
                 }
-                if(!$foundThesis){
+                else{
                     echo "<p>No Thesis Found with an Adviser $search";
                 }   
             }

@@ -4,7 +4,12 @@
 
     $response = ['success' => false, 'message' => ""];
     if($_SERVER['REQUEST_METHOD'] === "POST"){
-        $username = filter_var($_POST['username'], FILTER_SANITIZE_SPECIAL_CHARS);
+
+        if(empty($_POST['username'])){
+            echo json_encode(['success' => false, 'message' => "Username is Empty"]);
+            exit();
+        }
+        $username = trim($_POST['username']);
         
         $password = $_POST['password'];
         

@@ -1,0 +1,225 @@
+/* ====== GLOBAL ====== */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* ====== HEADER ====== */
+#header {
+    background: #1e293b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#header img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#header h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#logoutbtn {
+    margin-left: auto;
+    padding: 8px 16px;
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutbtn:hover {
+    background: #dc2626;
+}
+
+/* ====== NAVBAR ====== */
+#navbar {
+    background: #e5e7eb;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#navbar button {
+    padding: 10px 15px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#navbar button:hover {
+    background: #1d4ed8;
+}
+
+/* ====== FORMS ====== */
+form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #cbd5f5;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"],
+button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ====== TRACKER BUTTONS ====== */
+#trackersbtn {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#trackersbtn button {
+    background: #0f766e;
+    color: #fff;
+}
+
+#trackersbtn button:hover {
+    background: #115e59;
+}
+
+/* ====== THESIS CARDS ====== */
+#thesis_tracker > div > div {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2563eb;
+}
+
+#thesis_tracker h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#thesis_tracker h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.editThesis {
+    background: #f59e0b;
+    color: #fff;
+}
+
+.editThesis:hover {
+    background: #d97706;
+}
+
+/* ====== MODAL ====== */
+#modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modal form {
+    width: 80%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* ====== FILE PREVIEW ====== */
+#filePreview {
+    padding: 10px;
+    background: #f1f5f9;
+    border-radius: 5px;
+}
+
+#filePreview a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* ====== FILE OPTIONS ====== */
+#fileOptions button {
+    background: #64748b;
+    color: #fff;
+    margin-right: 5px;
+}
+
+#fileOptions button:hover {
+    background: #475569;
+}
+
+/* ====== MODAL ACTION BUTTONS ====== */
+#save {
+    background: #16a34a;
+    color: #fff;
+}
+
+#save:hover {
+    background: #15803d;
+}
+
+#cancel {
+    background: #9ca3af;
+    color: #000;
+}
+
+#cancel:hover {
+    background: #6b7280;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logoutbtn {
+        margin-left: 0;
+    }
+
+    #modal form {
+        width: 95%;
+    }
+}

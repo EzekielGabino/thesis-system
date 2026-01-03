@@ -1,0 +1,271 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+body > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+#logoutbtn {
+    background: #e74c3c;
+    border: none;
+    padding: 10px 18px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#logoutbtn:hover {
+    background: #c0392b;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+#navbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#navbar button {
+    background: #3498db;
+    border: none;
+    padding: 10px 16px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#navbar button:hover {
+    background: #2980b9;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+#student, #faculty, #thesis, #activity {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+/* =========================
+   FORMS
+========================= */
+form {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+    width: 250px;
+    padding: 8px 10px;
+    margin: 5px 5px 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+input[type="submit"],
+button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+input[type="submit"] {
+    background: #2ecc71;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    background: #27ae60;
+}
+
+button {
+    background: #95a5a6;
+    color: #fff;
+}
+
+button:hover {
+    background: #7f8c8d;
+}
+
+/* =========================
+   TABLES
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table thead {
+    background: #2c3e50;
+    color: #fff;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover {
+    background: #f2f2f2;
+}
+
+table img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.updateStudent {
+    background: #f39c12;
+}
+
+.updateStudent:hover {
+    background: #e67e22;
+}
+
+.deleteUser {
+    background: #e74c3c;
+}
+
+.deleteUser:hover {
+    background: #c0392b;
+}
+
+/* =========================
+   THESIS CARDS
+========================= */
+#thesis_card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#thesis_card h1 {
+    font-size: 20px;
+}
+
+#thesis_card h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FILE PREVIEW
+========================= */
+.filepreview {
+    margin: 10px 0;
+    padding: 10px;
+    background: #ecf0f1;
+    border-radius: 6px;
+}
+
+.closebtn {
+    background: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   MODALS
+========================= */
+#FormModal,
+#reviewModal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#FormModal form,
+#reviewModal form {
+    background: #fff;
+    padding: 25px;
+    width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+/* =========================
+   PROFILE / SIGN PREVIEW
+========================= */
+#profileImg img,
+#signImg img {
+    margin: 10px 0;
+    border: 2px solid #ddd;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    #FormModal form,
+    #reviewModal form {
+        width: 95%;
+    }
+}

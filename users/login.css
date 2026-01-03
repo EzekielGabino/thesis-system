@@ -1,0 +1,117 @@
+/* style.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Forms Container */
+#register, #login {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+/* Form Titles */
+#register h1, #login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+/* Form Fields */
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Submit Buttons */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+/* Toggle Buttons */
+#loginbtn, #regbtn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#loginbtn:hover, #regbtn:hover {
+    background-color: #357abd;
+}
+
+/* Button Container */
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Show Login by default */
+#login {
+    display: block;
+}
+
+/* Hide registration by default */
+#register {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    #register, #login {
+        width: 100%;
+        padding: 20px;
+    }
+}
